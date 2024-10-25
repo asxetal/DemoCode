@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(45deg, #434343, #000);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.nav > h2{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  margin: 15px;
+  cursor: pointer;
+}
+.navigation > ul{
+  display: flex;
+}
+.navigation > ul > li{
+  margin: 20px;
+  list-style: none;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+.navigation > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: border-bottom 2s linear;
+}
+.navigation > ul > li > a:hover{
+  border-bottom: 1px solid aqua;
+}
+.container{
+  font-family: "Poppins";
+}
+.container > h1{
+  color: #fff;
+  width: 100%;
+  height: 20vh;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container > h1:after{
+  content: ".CREATIVE";
+  color: aqua;
+}
+.container > p{
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.container > button{
+  padding: 20px 30px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.7s linear;
+}
+.container > button:hover{
+  background-color: rgb(5, 201, 201);
+}
+footer{
+  height: 200px;
+  background-image: linear-gradient(90deg, #69EACB , #EACCF8 , #6654F1);
+  position: relative;
+  top: 42vh;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+footer > .list__footer{
+  list-style: none;
+  margin: 10px;
+}
+footer > .list__footer > li > a{
+  text-decoration: none;
+  color: #fff;
+}
+footer > .icon {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  margin: 0 30%;
+  gap: 50px;
+  padding: 20px 0;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+.fa-bars{
+  color: #fff;
+  margin: 10px;
+}
+.nav-list.active {
+  display: flex;
+}
+@media (max-width: 860px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .container > button{
+    z-index: -1;
+  }
+  footer > .icon {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
