@@ -10,6 +10,9 @@ body{
   width: 100%;
   height: 100vh;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 .nav > h2{
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
@@ -35,7 +38,8 @@ body{
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
-  transition: border-bottom 2s linear;
+  transition: border-bottom 0.3s linear;
+  border-bottom: 0px solid black;
 }
 .navigation > ul > li > a:hover{
   border-bottom: 1px solid aqua;
@@ -92,7 +96,7 @@ footer > .list__footer{
 }
 footer > .list__footer > li > a{
   text-decoration: none;
-  color: #fff;
+  color: #585858;
 }
 footer > .icon {
   display: flex;
