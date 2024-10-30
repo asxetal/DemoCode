@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(45deg, #434343, #000);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.nav > h2{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  margin: 15px;
+  cursor: pointer;
+}
+.navigation > ul{
+  display: flex;
+}
+.navigation > ul > li{
+  margin: 20px;
+  list-style: none;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+.navigation > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: border-bottom 0.3s linear;
+  border-bottom: 0px solid black;
+}
+.navigation > ul > li > a:hover{
+  border-bottom: 1px solid aqua;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+.fa-bars{
+  color: #fff;
+  margin: 10px;
+}
+.nav-list.active {
+  display: flex;
+}
+.container{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container > h1{
+  color: #f1f1f1;
+  font-family: "Poppins";
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 25px 20px;
+}
+.container > h1:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0c3691;
+  width: 0;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+
+.container > h1:hover::before{
+  width: 100%;
+}

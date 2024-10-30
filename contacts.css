@@ -127,13 +127,13 @@ label > h4{
 }
 
 #message {
-  width: 400px; /* Thay đổi kích thước nếu cần */
-  height: 200px; /* Chiều cao của ô message */
+  width: 400px;
+  height: 200px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  resize: none; /* Ngăn không cho người dùng thay đổi kích thước */
+  resize: none;
 }
 
 #message:focus {
@@ -223,12 +223,5 @@ label > h4{
   }
   .menu-toggle {
     display: flex;
-  }
-  .container > button{
-    z-index: -1;
-  }
-  footer > .icon {
-    flex-wrap: wrap;
-    gap: 10px;
   }
 }
