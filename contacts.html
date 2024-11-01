@@ -9,57 +9,68 @@
   <title>Conact</title>
 </head>
 <body>
-  <div class="nav">
-    <h2>Logo here</h2>
-    <nav class="navigation">
-      <div class="menu-toggle">
-        <i class="fa-solid fa-bars" id="mobile-menu"></i>
-      </div>
-      <ul class="nav-list">
-        <li><a href="helo.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Port</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="container">
-    <div class="login">
-      <h1>SEND US MESSAGE</h1>  
-      <label for="email">
-        <h4>Email: </h4>
-        <input type="email" id="email">
-      </label>
-      <!-- Psw -->
-      <label for="password">
-        <h4>Password: </h4>
-        <input type="password" id="password">
-      </label>
-      <!-- mess -->
-      <div class="message">
-        <label>
-            <h4>Message</h4>
-            <textarea id="message" placeholder="Enter your message here..."></textarea>
+  <div id="content" style="display: none;">
+    <div class="nav">
+      <h2>Logo here</h2>
+      <nav class="navigation">
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars" id="mobile-menu"></i>
+        </div>
+        <ul class="nav-list">
+          <li><a href="helo.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Port</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="login">
+        <h1>SEND US MESSAGE</h1>  
+        <label for="email">
+          <h4>Email: </h4>
+          <input type="email" id="email">
         </label>
-    </div>    
-    </div>
-    <div class="contactus">
-      <h2>CONTACT US</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      <div class="mtk1">
-        <i class="fa-solid fa-phone"></i>
-        <p>0xxxxxxxxx</p>
+        <!-- Psw -->
+        <label for="password">
+          <h4>Password: </h4>
+          <input type="password" id="password">
+        </label>
+        <!-- mess -->
+        <div class="message">
+          <label>
+              <h4>Message</h4>
+              <textarea id="message" placeholder="Enter your message here..."></textarea>
+          </label>
+          <button>Send</button>
+      </div>    
       </div>
-      <div class="mtk2">
-        <i class="fa-regular fa-envelope"></i>
-        <p> m**********7@gmail.com</p>
-      </div>
-      <div class="mtk3">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam.</p>
+      <div class="contactus">
+        <h2>CONTACT US</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="mtk1">
+          <i class="fa-solid fa-phone"></i>
+          <p>0xxxxxxxxx</p>
+        </div>
+        <div class="mtk2">
+          <i class="fa-regular fa-envelope"></i>
+          <p> m**********7@gmail.com</p>
+        </div>
+        <div class="mtk3">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam.</p>
+        </div>
       </div>
     </div>
   </div>
+  <!-- load -->
+  <div id="loading" class="skeleton">
+    <div class="skeleton-header"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line short"></div>
+  </div>
+<script src="script.js"></script>
 </body>
 </html>
